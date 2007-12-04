@@ -10,7 +10,7 @@
 
 %define name	convertfs
 %define version 0.20020318
-%define release 4mdk
+%define release  %mkrel 4
 
 Summary:	ConvertFS - convert one file system to another
 Name:		%{name}
