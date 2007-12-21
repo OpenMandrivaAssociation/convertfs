@@ -22,6 +22,7 @@ Source1:	README.bz2
 License:	GPL
 Group:		System/Kernel and hardware
 URL:		http://tzukanov.narod.ru/convertfs/
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %if %{build_diet}
 BuildRequires:	dietlibc-devel >= 0.20-1mdk
