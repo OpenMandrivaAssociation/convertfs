@@ -8,18 +8,18 @@
 # rpm -ba|--rebuild --with 'xxx'
 %{?_with_diet: %{expand: %%define build_diet 1}}
 
-%define name	convertfs
-%define version 0.20020318
-%define release  %mkrel 4
+%define date	20050113
+%define version	0.%{date}
+%define fdate	%(date -d %date +%d%b%Y | tr [:upper:] [:lower:])
 
 Summary:	ConvertFS - convert one file system to another
-Name:		%{name}
+Name:		convertfs
 Version:	%{version}
-Release:	%{release}
-Source0:	%{name}-18mar2002.tar.bz2
+Release:	%{mkrel 1}
+Source0:	http://tzukanov.narod.ru/convertfs/%{name}-%{fdate}.tar.gz
 # lynx -dump -nolist http://tzukanov.narod.ru/convertfs/ > README
-Source1:	README.bz2
-License:	GPL
+Source1:	README.lzma
+License:	GPLv2
 Group:		System/Kernel and hardware
 URL:		http://tzukanov.narod.ru/convertfs/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
@@ -43,12 +43,10 @@ files.
                 filesystem image.
 
 %prep
-
 %setup -q -n %{name}
-bzcat %{SOURCE1} > README
+lzcat %{SOURCE1} > README
 
 %build
-
 %if %{build_diet}
     # OE: use the power of dietlibc
     for i in devclone devremap prepindex; do
