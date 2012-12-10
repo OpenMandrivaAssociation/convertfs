@@ -74,3 +74,45 @@ install -m755 prepindex %{buildroot}/sbin/
 /sbin/devremap
 /sbin/prepindex
 
+
+
+%changelog
+* Mon Dec 07 2009 Jérôme Brenier <incubusss@mandriva.org> 0.20050113-3mdv2010.1
++ Revision: 474285
+- rebuild
+
+* Wed Sep 02 2009 Thierry Vignaud <tv@mandriva.org> 0.20050113-2mdv2010.1
++ Revision: 424967
+- rebuild
+
+* Thu May 15 2008 Adam Williamson <awilliamson@mandriva.org> 0.20050113-1mdv2009.0
++ Revision: 207916
+- use cunning macro to handle the date properly
+- new license policy
+- new release
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Tue Dec 04 2007 Thierry Vignaud <tv@mandriva.org> 0.20020318-4mdv2008.1
++ Revision: 114992
+- use %%mkrel
+- import convertfs
+
+
+* Tue May 10 2005 Oden Eriksson <oeriksson@mandriva.com> 0.20020318-4mdk
+- deactivate dietlibc build as it won't build on x86_64
+
+* Fri Oct 15 2004 Oden Eriksson <oeriksson@mandrakesoft.com> 0.20020318-3mdk
+- rpmbuildupdated
+
+* Mon Aug 04 2003 Per �yvind Karlsen <peroyvind@linux-mandrake.com> 0.20020318-2mdk
+- rebuild
+
+* Sun Jul 27 2003 Oden Eriksson <oden.eriksson@kvikkjokk.net> 0.20020318-1mdk
+- initial cooker contrib
+- use spec file magic to compile convertfs against dietlibc, maybe something
+  for the rescue stuff?
