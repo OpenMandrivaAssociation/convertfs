@@ -12,7 +12,7 @@
 %define version	0.%{date}
 %define fdate	%(date -d %date +%d%b%Y | tr [:upper:] [:lower:])
 
-Summary:	ConvertFS - convert one file system to another
+Summary:	- convert one file system to another
 Name:		convertfs
 Version:	%{version}
 Release:	%{mkrel 3}
