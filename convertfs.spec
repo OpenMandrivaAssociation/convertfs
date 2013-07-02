@@ -12,10 +12,10 @@
 %define version	0.%{date}
 %define fdate	%(date -d %date +%d%b%Y | tr [:upper:] [:lower:])
 
-Summary:	- convert one file system to another
+Summary:	Convert one file system to another
 Name:		convertfs
-Version:	%{version}
-Release:	%{mkrel 3}
+Version:	0.%{date}
+Release:	4
 Source0:	http://tzukanov.narod.ru/convertfs/%{name}-%{fdate}.tar.gz
 # lynx -dump -nolist http://tzukanov.narod.ru/convertfs/ > README
 Source1:	README.lzma
