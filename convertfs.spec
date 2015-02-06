@@ -15,7 +15,7 @@
 Summary:	Convert one file system to another
 Name:		convertfs
 Version:	0.%{date}
-Release:	4
+Release:	5
 Source0:	http://tzukanov.narod.ru/convertfs/%{name}-%{fdate}.tar.gz
 # lynx -dump -nolist http://tzukanov.narod.ru/convertfs/ > README
 Source1:	README.lzma
