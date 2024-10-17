@@ -21,7 +21,7 @@ Source0:	http://tzukanov.narod.ru/convertfs/%{name}-%{fdate}.tar.gz
 Source1:	README.lzma
 License:	GPLv2
 Group:		System/Kernel and hardware
-URL:		http://tzukanov.narod.ru/convertfs/
+URL:		https://tzukanov.narod.ru/convertfs/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %if %{build_diet}
